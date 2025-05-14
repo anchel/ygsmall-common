@@ -22,10 +22,11 @@ func (s *SessionInfo) UnmarshalBinary(data []byte) error {
 type LoginAuthType string
 
 const (
-	LoginAuthTypePhone      LoginAuthType = "phone"
-	LoginAuthTypeEmail      LoginAuthType = "email"
-	LoginAuthTypeWechatFwh  LoginAuthType = "wechat_fuwuhao"
-	LoginAuthTypeWechatMini LoginAuthType = "wechat_miniprogram"
+	LoginAuthTypePhone           LoginAuthType = "phone"
+	LoginAuthTypeEmail           LoginAuthType = "email"
+	LoginAuthTypeWechatFwh       LoginAuthType = "wechat_fuwuhao"
+	LoginAuthTypeWechatMini      LoginAuthType = "wechat_miniprogram"
+	LoginAuthTypeAccountPassword LoginAuthType = "account_password"
 )
 
 type PayPlatformType string
