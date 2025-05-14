@@ -35,23 +35,23 @@ const (
 	PayPlatformTypeAlipay PayPlatformType = "alipay"
 )
 
-type WechatpayTransactionInfo struct {
-	Currency      *string `json:"currency,omitempty"`
-	PayerCurrency *string `json:"payer_currency,omitempty"`
-	PayerTotal    *int64  `json:"payer_total,omitempty"`
-	Total         *int64  `json:"total,omitempty"`
+// type WechatpayTransactionInfo struct {
+// 	Currency      *string `json:"currency,omitempty"`
+// 	PayerCurrency *string `json:"payer_currency,omitempty"`
+// 	PayerTotal    *int64  `json:"payer_total,omitempty"`
+// 	Total         *int64  `json:"total,omitempty"`
 
-	Appid      *string `json:"appid,omitempty"`
-	Attach     *string `json:"attach,omitempty"`
-	BankType   *string `json:"bank_type,omitempty"`
-	Mchid      *string `json:"mchid,omitempty"`
-	OutTradeNo *string `json:"out_trade_no,omitempty"`
+// 	Appid      *string `json:"appid,omitempty"`
+// 	Attach     *string `json:"attach,omitempty"`
+// 	BankType   *string `json:"bank_type,omitempty"`
+// 	Mchid      *string `json:"mchid,omitempty"`
+// 	OutTradeNo *string `json:"out_trade_no,omitempty"`
 
-	Openid *string `json:"openid,omitempty"`
+// 	Openid *string `json:"openid,omitempty"`
 
-	SuccessTime    *string `json:"success_time,omitempty"`
-	TradeState     *string `json:"trade_state,omitempty"`
-	TradeStateDesc *string `json:"trade_state_desc,omitempty"`
-	TradeType      *string `json:"trade_type,omitempty"`
-	TransactionId  *string `json:"transaction_id,omitempty"`
-}
+// 	SuccessTime    *string `json:"success_time,omitempty"`
+// 	TradeState     *string `json:"trade_state,omitempty"`
+// 	TradeStateDesc *string `json:"trade_state_desc,omitempty"`
+// 	TradeType      *string `json:"trade_type,omitempty"`
+// 	TransactionId  *string `json:"transaction_id,omitempty"`
+// }
