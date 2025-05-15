@@ -81,8 +81,10 @@ type OrderAftersalesService struct {
 	Remark             string                                   `gorm:"column:remark;type:varchar(512);not null" json:"remark"`
 	Evidence           *EvidenceDetails                         `gorm:"column:evidence;type:varchar(512);not null" json:"evidence"`
 
-	ApplyTime    time.Time  `gorm:"column:apply_time;type:datetime" json:"apply_time"`
-	ApprovedTime *time.Time `gorm:"column:approved_time;type:datetime" json:"approved_time"`
+	ApplyTime      time.Time  `gorm:"column:apply_time;type:datetime" json:"apply_time"`
+	ApprovedTime   *time.Time `gorm:"column:approved_time;type:datetime" json:"approved_time"`
+	RejectedTime   *time.Time `gorm:"column:rejected_time;type:datetime" json:"rejected_time"`
+	RejectedRemark *string    `gorm:"column:rejected_remark;type:varchar(512)" json:"rejected_remark"`
 
 	LogisticsID *int64 `gorm:"column:logistics_id;type:bigint" json:"logistics_id"`
 
