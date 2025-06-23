@@ -10,4 +10,6 @@ type AttributeValue struct {
 	AttributeID int64 `gorm:"column:attribute_id;type:bigint;not null" json:"attribute_id"`
 
 	Value string `gorm:"column:value;type:varchar(255);not null" json:"value"`
+
+	Attribute Attribute `gorm:"foreignKey:AttributeID;references:ID" json:"attribute"`
 }
