@@ -26,7 +26,8 @@ type Product struct {
 	PrimaryImage string         `gorm:"column:primary_image;type:varchar(2048)" json:"primary_image"`
 	Details      ProductDetails `gorm:"column:details;type:json" json:"details"`
 
-	CategoryID uint `gorm:"column:category_id;type:bigint;not null" json:"category_id"`
+	CategoryID int64    `gorm:"column:category_id;type:bigint;not null" json:"category_id"`
+	Category   Category `gorm:"foreignKey:CategoryID;references:ID" json:"category"`
 
 	Status ProductStatus `gorm:"column:status;type:varchar(255);not null;default:'inactive'" json:"status"`
 
