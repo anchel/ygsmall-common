@@ -11,5 +11,5 @@ type AttributeValue struct {
 
 	Value string `gorm:"column:value;type:varchar(255);not null" json:"value"`
 
-	Attribute Attribute `gorm:"foreignKey:AttributeID;references:ID" json:"attribute"`
+	Attribute *Attribute `gorm:"foreignKey:AttributeID;references:ID" json:"attribute"`
 }

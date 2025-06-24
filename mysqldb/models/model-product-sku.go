@@ -27,6 +27,8 @@ type ProductSku struct {
 	SkuImage string     `gorm:"column:sku_image;type:varchar(2048)" json:"sku_image"`
 	Details  SkuDetails `gorm:"column:details;type:json" json:"details"`
 
+	Attributes []ProductSkuAttribute `gorm:"foreignKey:ID;references:SkuID" json:"attributes"`
+
 	Status ProductSkuStatus `gorm:"column:status;type:varchar(255);not null;default:'inactive'" json:"status"`
 
 	PriceOrigin   int64 `gorm:"column:price_origin;type:int;not null" json:"price_origin"`
