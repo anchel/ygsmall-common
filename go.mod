@@ -5,6 +5,7 @@ go 1.23.4
 require (
 	github.com/charmbracelet/log v0.4.2
 	github.com/wechatpay-apiv3/wechatpay-go v0.2.20
+	gorm.io/gorm v1.30.0
 )
 
 require (
@@ -26,5 +27,4 @@ require (
 	golang.org/x/exp v0.0.0-20231006140011-7918f672742d // indirect
 	golang.org/x/sys v0.30.0 // indirect
 	golang.org/x/text v0.20.0 // indirect
-	gorm.io/gorm v1.30.0 // indirect
 )
