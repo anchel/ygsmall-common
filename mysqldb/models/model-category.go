@@ -20,4 +20,6 @@ type Category struct {
 	Status    CategoryStatus `gorm:"column:status;type:varchar(255);not null;default:'active'" json:"status"`
 	SortOrder int32          `gorm:"column:sort_order;type:int;not null;default:0" json:"sort_order"`
 	Thumbnail string         `gorm:"column:thumbnail;type:varchar(2048)" json:"thumbnail"`
+
+	Attributes []CategoryAttribute `gorm:"foreignKey:CategoryID;references:ID" json:"attributes"`
 }
